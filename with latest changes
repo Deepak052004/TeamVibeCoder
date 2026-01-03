@@ -1,0 +1,22 @@
+[1mdiff --git a/frontend/src/App.jsx b/frontend/src/App.jsx[m
+[1mindex 565e48a..c2400c8 100644[m
+[1m--- a/frontend/src/App.jsx[m
+[1m+++ b/frontend/src/App.jsx[m
+[36m@@ -1,13 +1,15 @@[m
+ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";[m
+ import { HomePage } from "./components/HomePage";[m
+[31m-import { ScrollToHash } from "./components/ScrollToHash";[m
+[32m+[m[32mimport { VerifyPage } from "./components/VerifyPage";[m
+[32m+[m[32mimport { ResultsPage } from "./components/ResultsPage";[m
+ [m
+ export default function App() {[m
+   return ([m
+     <Router>[m
+[31m-      <ScrollToHash />[m
+       <Routes>[m
+         <Route path="/" element={<HomePage />} />[m
+[32m+[m[32m        <Route path="/verify" element={<VerifyPage />} />[m
+[32m+[m[32m        <Route path="/results" element={<ResultsPage />} />[m
+       </Routes>[m
+     </Router>[m
+   );[m
