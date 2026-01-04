@@ -1,0 +1,21 @@
+# ---------- Backend ----------
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.production
+
+# ---------- Frontend ----------
+frontend/node_modules/
+
+# ---------- ML ----------
+ml/__pycache__/
+ml/*.pkl
+ml/*.h5
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
